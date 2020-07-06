@@ -14,6 +14,6 @@ var person2 = {
 }
 
 
-var x = person.fullName.call(person2, "Oslo", "Norway"); 
+var x = person.fullName.apply(person2, ["Oslo", "Norway"]); 
 document.getElementById("demo").innerHTML = x;
 console.log(x)
