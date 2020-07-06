@@ -1,19 +1,8 @@
-var person = {
-  fullName: function(city, country) {
-    return this.firstName + " " + this.lastName + "," + city + "," + country;
-  }
-  }
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter;}
+})();
 
-var person1 = {
-  firstName:"John",
-  lastName: "Doe"
+function myFunction(){
+  document.getElementById("demo").innerHTML= add();
 }
-var person2 = {
-  firstName:"Mary",
-  lastName: "Doe"
-}
-
-
-var x = person.fullName.apply(person2, ["Oslo", "Norway"]); 
-document.getElementById("demo").innerHTML = x;
-console.log(x)
