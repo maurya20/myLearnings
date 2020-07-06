@@ -1,4 +1,19 @@
-function myFunction(a, b) {
-  return a * b;
+var person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+  }
+
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
 }
-document.getElementById("demo").innerHTML = myFunction(10, -22); 
+var person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+
+var x = person.fullName.call(person2, "Oslo", "Norway"); 
+document.getElementById("demo").innerHTML = x;
+console.log(x)
