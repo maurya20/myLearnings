@@ -1,8 +1,3 @@
-var add = (function () {
-  var counter = 0;
-  return function () {counter += 1; return counter;}
-})();
-
-function myFunction(){
-  document.getElementById("demo").innerHTML= add();
-}
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML =  y[0].innerHTML;
