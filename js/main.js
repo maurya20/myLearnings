@@ -1,3 +1,4 @@
-var x = document.getElementById("main");
-var y = x.getElementsByTagName("p");
-document.getElementById("demo").innerHTML =  y[0].innerHTML;
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
