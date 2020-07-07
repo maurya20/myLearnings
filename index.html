@@ -8,12 +8,19 @@
 
     <title>Home</title>
 </head>
-
 <body>
+<div class="container">
+<form>
+<form  id="select">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br> 
+</form>
+<button id="myBtn"> Add more</button>
+<input class="sub" type="submit" value="Submit">
+</form>
+<p id="demo"></p>
 
-Enter your name: <input type="text" id="fname" onchange="myFunction()">
-
-<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+</div>
 
 
     <script src="js/main.js"></script>
