@@ -1,16 +1,21 @@
 #container {
-  width: 70%;
+  width: 100%;
   height: 600px;
-  background-color: dimgrey;
+  background-color: black;
+  color: antiquewhite;
 }
 
 
 .sub {
   background-color: green;
   float: right;
+  padding: 20px;
+  margin: 20px;
  
 }
 
 #myBtn {
   float: right;
+  padding: 20px;
+  margin-top: 0px;
 }
