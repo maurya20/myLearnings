@@ -1,7 +1,11 @@
-var z = document.getElementById("container");
-var x = document.getElementById("myBtn");
-x.addEventListener("click", myFunction);
 function myFunction() {
-  var y = z.getElementsByTagName("form");
-  document.getElementById("demo").innerHTML +=y[0].innerHTML;
+  var txt;
+  var person = prompt("Please enter your name:", "John doe");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
 }
+
