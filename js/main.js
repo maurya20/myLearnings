@@ -1,11 +1,5 @@
+var myclock = setInterval(myFunction, 1000);
 function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "John doe");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = txt;
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
-
