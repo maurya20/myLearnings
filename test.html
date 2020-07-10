@@ -57,17 +57,20 @@
     <p id="de"> </p>
     <button class="start" onclick="myclock = setInterval(myFunction, 100)">Start</button>
     <button class="stop" onclick="clearInterval(myclock)">Stop</button><br>
-    <button id="new">New</button>
+    
     <h4>Programmed&Designed by Mukesh Maurya</h4>
   </div>
   <script>
-    var tm = 0;
-    var t = new Date();
+   
+   
     function myFunction() {
-      var d = new Date();
-      tm = d.getTime()-t.getTime();
-      document.getElementById("demo").innerHTML = d.getSeconds()+":"+tm/100;
+      d = new Date();
+      m = d.getTime();
+      x = m%100000;
+      document.getElementById("demo").innerHTML = x;
     }
+    
+    
   </script>
 </body>
 
