@@ -27,7 +27,7 @@
       font-weight: bold;
     }
 
-    .start {
+    #start {
       background-color: green;
       padding: 20px;
       color: white;
@@ -55,7 +55,7 @@
     <p>My Digital Clock </p>
     <p id="demo"> </p>
     
-    <button class="start" onclick="myclock = setInterval(myFunction, 10)">Click to show time</button>
+    <button id="start" onclick="getElementById('start').style.display = 'block'; this.style.display = 'none', myclock = setInterval(myFunction, 100)">Click to show time</button>
     
     
     <h4>Programmed&Designed by Mukesh Maurya</h4>
@@ -68,7 +68,10 @@
       y = d.getMinutes();
       x = m%100;
       document.getElementById("demo").innerHTML =z+":"+y +":"+ x;
-    }
+
+}
+    
+    
     
     
   </script>
