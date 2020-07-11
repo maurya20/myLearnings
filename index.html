@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media only screen and (max-width: 600px) {
+      #med {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(134, 211, 235);
+        color: rgb(206, 7, 7);
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+        margin-top: 0px;
+      }
+    }
 
-    <title>Home</title>
+    div {
+      width: 30%;
+      height: 100%;
+      background-color: rgb(134, 211, 235);
+      color: rgb(206, 7, 7);
+      text-align: center;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    .start {
+      background-color: green;
+      padding: 20px;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .stop {
+      background-color: red;
+      padding: 20px;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 11px;
+    }
+  </style>
+
 </head>
+
 <body>
-    <div id="demo">
-        
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Get Location</button>
-        
-        </div>
-
-    <script src="js/main.js"></script>
+  <div id="med">
+    <p>My Digital Clock </p>
+    <p id="demo"> </p>
+    
+    <button class="start" onclick="myclock = setInterval(myFunction, 10)">Click to show time</button>
+    
+    
+    <h4>Programmed&Designed by Mukesh Maurya</h4>
+  </div>
+  <script>
+   function myFunction() {
+      d = new Date();
+      m = d.getSeconds();
+      z = d.getHours();
+      y = d.getMinutes();
+      x = m%100;
+      document.getElementById("demo").innerHTML =z+":"+y +":"+ x;
+    }
+    
+    
+  </script>
 </body>
 
 </html>
