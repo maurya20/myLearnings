@@ -2,79 +2,20 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @media only screen and (max-width: 600px) {
-      #med {
-        width: 100%;
-        height: 600px;
-        background-color: rgb(134, 211, 235);
-        color: rgb(206, 7, 7);
-        text-align: center;
-        font-size: xx-large;
-        font-weight: bold;
-        margin-top: 0px;
-      }
-    }
-
-    div {
-      width: 30%;
-      height: 100%;
-      background-color: rgb(134, 211, 235);
-      color: rgb(206, 7, 7);
-      text-align: center;
-      font-size: xx-large;
-      font-weight: bold;
-    }
-
-    #start {
-      background-color: green;
-      padding: 20px;
-      color: white;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    .stop {
-      background-color: red;
-      padding: 20px;
-      color: white;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    h4 {
-      font-size: 11px;
-    }
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
 </head>
 
 <body>
-  <div id="med">
-    <p>My Digital Clock </p>
-    <p id="demo"> </p>
-    
-    <button id="start" onclick="getElementById('start').style.display = 'block'; this.style.display = 'none', myclock = setInterval(myFunction, 100)">Click to show time</button>
-    
-    
-    <h4>Programmed&Designed by Mukesh Maurya</h4>
-  </div>
-  <script>
-   function myFunction() {
-      d = new Date();
-      m = d.getSeconds();
-      z = d.getHours();
-      y = d.getMinutes();
-      x = m%100;
-      document.getElementById("demo").innerHTML =z+":"+y +":"+ x;
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"><img src="image/logo.png" width="110px" height="50px"></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
 
-}
-    
-    
-    
-    
-  </script>
 </body>
-
 </html>
