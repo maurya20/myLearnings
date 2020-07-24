@@ -1,42 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="camera" style="height:auto;width:auto; text-align:left;"></div>
-    <input type="button" value="Take a Snap and Download Picture" id="btPic"
-        onclick="takeSnapShot()" />
+    <h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me to hide paragraphs</button>
 </body>
-
 <script>
-    // CAMERA SETTINGS.
-    Webcam.set({
-        width: 220,
-        height: 190,
-        image_format: 'jpeg',
-        jpeg_quality: 100
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p,button").hide();
+      });
     });
-    Webcam.attach('#camera');
-
-    // TAKE A SNAPSHOT.
-    takeSnapShot = function () {
-        Webcam.snap(function (data_uri) {
-
-        });
-    }
-
-    // DOWNLOAD THE IMAGE.
-    d = Date.now();
-    downloadImage(d, data_uri);
-    downloadImage = function (name, datauri) {
-
-        var a = document.createElement('a');
-        a.setAttribute('download', name + '.jpg');
-        a.setAttribute('href', datauri);
-        a.click();
-    }
-</script>
+    </script>
 
 </html>
