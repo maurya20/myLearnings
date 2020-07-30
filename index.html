@@ -5,7 +5,12 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").load("http://127.0.0.1:5500/image/stp.html");
+    $("#div1").load("http://127.0.0.1:5500/image/stp.html", function(responseTxt, statusTxt, xhr){
+      if(statusTxt == "success")
+        alert("External content loaded successfully!");
+      if(statusTxt == "error")
+        alert("Error: " + xhr.status + ": " + xhr.statusText);
+    });
   });
 });
 </script>
@@ -16,7 +21,7 @@ $(document).ready(function(){
 
 <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
-<button>Get External Content</button>
+<button id="bt">Get External Content</button>
 
 
 </body>
