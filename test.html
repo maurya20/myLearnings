@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-<body onload="myclock = setInterval(myFunction, 10)" style="background-color: gray;">
-
-<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML canvas tag.</canvas>
+<body onload="myclock = setInterval(myFunction, 10)">
+<div style="width:97%">
+<div style="width:30%;float:left;">
+<input type="text" placeholder="Type radius of circle..." id="radius">
 <h3 id="demo">demo</h3>
-   <input type="text" placeholder="Type side of the square..." id="side">
+</div>
+<div style="width:68%; float:right;">
+<canvas id="myCanvas" width="450" height="450"style="background-color: gray;">
+Your browser does not support the HTML canvas tag.</canvas>
+</div>
+</div>
 
 <script>
-      var myclock = setInterval(myFunction, 10);
+      var myclock = setInterval(myFunction, 2000);
       function myFunction() {
-        side = document.getElementById("side").value;
-        area = side*side;
-        document.getElementById("demo").innerHTML = area;
-        document.getElementById("p2").style.width = side+"px";
-        document.getElementById("p2").style.height = side+"px";
+        radius = document.getElementById("radius").value;
+        area = Math.PI*radius*radius;
+        document.getElementById("demo").innerHTML = "Area of your circle = "+area+"square unit.";
+        document.getElementById("p2").style.width = radius + "px";
+        document.getElementById("p2").style.height = radius + "px";
       }
-      var myclock = setInterval(myCir, 1000);
+      var myclock = setInterval(myCir, 2000);
       function myCir() {
-          side = document.getElementById("side").value;
+          side = document.getElementById("radius").value;
           var c = document.getElementById("myCanvas");
           var ctx = c.getContext("2d");
-          ctx.clearRect(0, 0, 500, 500);
+          ctx.clearRect(0, 0, 450, 450);
           ctx.beginPath();
-          ctx.arc(250,250,side,0,2*Math.PI);
+          ctx.arc(225,225,radius,0,2*Math.PI);
           ctx.stroke();
       }
-      
-
 </script> 
 
 </body>
