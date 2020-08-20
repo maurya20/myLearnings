@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-  <script> $(function(){
-  new Clipboard('.copy-text');
-});</script>
-   
+<body onload="myclock = setInterval(myFunction, 10)" style="background-color: gray;">
 
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+<h3 id="demo">demo</h3>
+   <input type="text" placeholder="Type side of the square..." id="side">
 
-  </head>
-  <body>
-    <p>testing</p>
-     <label for="country">LMS API Link:</label>  
-    <input type="text" id="content" value="https://lms-cli.herokuapp.com/stu" readonly>
-    <a class="copy-text" data-clipboard-target="#content" href="#"><button>copy link</button></a> 
-  </body>
+<script>
+      var myclock = setInterval(myFunction, 10);
+      function myFunction() {
+        side = document.getElementById("side").value;
+        area = side*side;
+        document.getElementById("demo").innerHTML = area;
+        document.getElementById("p2").style.width = side+"px";
+        document.getElementById("p2").style.height = side+"px";
+      }
+      var myclock = setInterval(myCir, 1000);
+      function myCir() {
+          side = document.getElementById("side").value;
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          ctx.clearRect(0, 0, 500, 500);
+          ctx.beginPath();
+          ctx.arc(250,250,side,0,2*Math.PI);
+          ctx.stroke();
+      }
+      
+
+</script> 
+
+</body>
 </html>
-
