@@ -5,23 +5,36 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <script>
-      var myclock = setInterval(myFunction, 100);
+      var myclock = setInterval(myFunction, 10);
       function myFunction() {
          side = document.getElementById("side").value;
          area = side*side;
-        document.getElementById("demo").innerHTML = area;
-        document.getElementById("p2").style.width = side+"%";
-        document.getElementById("p2").style.height = side+"%";
+         document.getElementById("sqr").innerHTML = "Area of the square = "+area+"  "+"Square unit.";
+         document.getElementById("s").style.width = side+"px";
+         document.getElementById("s").style.height = side+"px";
+         r = document.getElementById("radi").value;
+         carea = Math.PI*r*r;
+         document.getElementById("cir").innerHTML = "Area of the circle = "+carea+"  "+"Square unit.";
+         document.getElementById("c").style.width = side+"px";
+         document.getElementById("c").style.height = side+"px";
+
       }
    </script>
 </head>
-<body onload="myclock = setInterval(myFunction, 100)" style="background-color: gray;">
-   <h3> Area of the square in square unit:</h3>
-   <h3 id="demo">demo</h3>
-   <input type="text" placeholder="Type side of the square..." id="side">
-   <div id="p2" style="background-color: yellow">
-      <p>square</p>
+<body onload="myclock = setInterval(myFunction, 10)" style="background-color: gray;">
+   <label for="square">Enter the side length of square to get area:</label>
+   <input type="text" id="side" value=0>
+   <h3 id="sqr">demo</h3>
+   <div id="s" style="background-color: yellow">
+   <p>s</p>
    </div>
-   
+   <br><br>
+
+   <label for="circle">Enter the diameter length of circle to get area:</label>
+   <input type="text" id="radi" value=0>
+   <h3 id="cir"></h3>
+   <div id="c" style="background-color: blue;border-radius: 50%;">
+   <p>c</p>
+   </div> 
 </body>
 </html>
