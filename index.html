@@ -5,17 +5,23 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <script>
-      var myclock = setInterval(myFunction, 10);
+      var myclock = setInterval(myFunction, 100);
       function myFunction() {
-         var side = document.getElementById("side").value;
-         var area = side*side;
+         side = document.getElementById("side").value;
+         area = side*side;
         document.getElementById("demo").innerHTML = area;
+        document.getElementById("p2").style.width = side+"%";
+        document.getElementById("p2").style.height = side+"%";
       }
    </script>
 </head>
-<body onload="myclock = setInterval(myFunction, 10)">
+<body onload="myclock = setInterval(myFunction, 100)" style="background-color: gray;">
    <h3> Area of the square in square unit:</h3>
-   <p id="demo">demo</p>
+   <h3 id="demo">demo</h3>
    <input type="text" placeholder="Type side of the square..." id="side">
+   <div id="p2" style="background-color: yellow">
+      <p>square</p>
+   </div>
+   
 </body>
 </html>
