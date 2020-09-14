@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <script>
-      var sArea = setInterval(myArea, 10);
-      function myArea() {
-         side = document.getElementById("side").value;
-         area = side * side;
-         document.getElementById("sqr").innerHTML = "Area of the square = " + area + "  " + "Square unit.";
-         document.getElementById("s").style.width = side + "px";
-         document.getElementById("s").style.height = side + "px";
-         radi = document.getElementById("radi").value;
-         carea = Math.PI * radi * radi;
-         document.getElementById("cir").innerHTML = "Area of the circle = " + carea + "  " + "Square unit.";
-         document.getElementById("circle").style.width = radi + "px";
-         document.getElementById("circle").style.height = radi + "px";
-      };
-   </script>
-</head>
+   <head>
+      <title>Bootstrap Card</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    </head>
 
-<body onload="sArea = setInterval(myArea, 10)" style="background-color: gray;">
-   <label for="square">Enter the side length of square to get area:</label>
-   <input type="text" id="side" value=0>
-   <h3 id="sqr">demo</h3>
-   <div id="s" style="background-color: yellow">
-      <p>.</p>
-   </div>
-   <br><br>
+<body>
+   
+<p>Hi there!</p>
+<p>Hi there!</p>
+<p>Hi there!</p>
+<p>Hi there!</p>
 
-   <label>Enter the radius length of circle to get area:</label>
-   <input type="text" id="radi" value=0>
-   <h3 id="cir">test</h3>
-   <div id="circle" style="background-color: blue; border-radius: 50%">
-      <p>.</p>
-   </div>
+
+ <script src="js/main.js"></script>
 </body>
 
 </html>

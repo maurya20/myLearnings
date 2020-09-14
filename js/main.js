@@ -1,14 +1,6 @@
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+ let ps =  document.getElementsByTagName('p')
+for (let i=0; i<ps.length; i++){
+    ps[i].addEventListener('click', function(){
+        console.log('You clicked p#'+(i+1))
+    })
 }
