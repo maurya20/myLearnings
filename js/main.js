@@ -1,12 +1,5 @@
-const list = document.querySelector('.list')
-function addUser(firstName, lastName){
-    const template= `
-    <div class="user">
-    <p>${firstName} ${lastName} </p>
-    </div>
-    `
-    list.insertAdjacentHTML('beforeend', template)
+const student = [ 'aniket','ankit','himanshu','gotom','shilpa','vinay']
+student.forEach(function(x){
+    console.log(x)
 }
-addUser("Mukesh","Maurya")
-addUser("Mukesh","Maurya")
-addUser("Banti ","Maurya")
+)
