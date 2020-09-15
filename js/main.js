@@ -1,13 +1,21 @@
-const paintings = [
-    {name:'Mona lisa',width:200,height:200},
-    {name:'The scream',width:400,height:600},
-    {name:'The last supper',width:600,height:700}
+const cars = [
+    {name:'Ford',price:200},
+    {name:'Nissan',price:400},
+    {name:'Jeep',price:600}
  ]
- const list = paintings.map(function(i){
-     return i.name
+ template = ''
+ const select = document.querySelector('.list')
+ const list = cars.map(function(i){
+     return {name:i.name, price:i.price*76}
  })
  console.log(list)
- list.forEach(function(name){
-     const select = document.querySelector('select')
-     select.insertAdjacentHTML('afterbegin', `<option value='${name}'>${name}</option>`)
+ list.forEach(function(x){
+    template+= `<h3> The price of ${x.name} car is Rs.${x.price} </h3>`
+
  })
+    
+     
+ 
+     
+    
+ select.insertAdjacentHTML('afterbegin', template)
