@@ -1,11 +1,12 @@
-const products = [
-    {name:"RedMi Note8", category:"Mobile"},
-    {name:"MiTV", category:"TV"},
-    {name:"RedMi k10", category:"Mobile"},
-    {name:"Lg 56", category:"TV"},
-    {name:"I phoneXII", category:"Mobile"}
-]
-const result = products.filter(function(x){
-    return x.category === "Mobile"
-})
+const remainingBalance = 200
+const channels = [
+    {name:'HBO',rent:100},
+    {name:'LIFE',rent:100},
+    {name:'Max',rent:700},
+    {name:'Cooking channel',rent:300},
+    {name:'WOBI',rent:160}
+ ];
+const result = channels.reduce(function(sum, name){
+    return sum+ name.rent}, remainingBalance)
+
 console.log(result)
