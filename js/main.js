@@ -1,12 +1,10 @@
-const remainingBalance = 200
-const channels = [
-    {name:'HBO',rent:100},
-    {name:'LIFE',rent:100},
-    {name:'Max',rent:700},
-    {name:'Cooking channel',rent:300},
-    {name:'WOBI',rent:160}
- ];
-const result = channels.reduce(function(sum, name){
-    return sum+ name.rent}, remainingBalance)
+const names= ["James","Ron","Lisa","Tommy"];
+let randomName = items=> items[Math.floor(Math.random()*items.length)]
+console.log(randomName(names))
 
-console.log(result)
+
+let randomNumber = (maxNumber,minNumber) => Math.floor(Math.random() * maxNumber) + minNumber
+
+console.log(randomNumber(10, 0))
+
+console.log(randomName(names) + " magic number is " + randomNumber(5,2))
