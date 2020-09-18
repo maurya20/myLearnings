@@ -1,5 +1,8 @@
-//We want to run a function that greets the user by his name, but if the name is not provided we want to show a default name.
-const greeting = (name= 'user') => {
-    return 'Hello '+ name;
+//var distances = [distance1,distance2,distance3]
+let total = 0;
+const totalDistance = (...totalDistance) =>{
+    return total = totalDistance[0]+totalDistance[1]+totalDistance[2]
+    
  }
- console.log(greeting())
+ totalDistance(200,1100,200)
+ console.log(total)
