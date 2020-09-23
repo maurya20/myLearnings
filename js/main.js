@@ -1,5 +1,18 @@
-import { user, sum } from "./app.js"
+class Company {
+  constructor(){
+  this.name = "Ambition"
+  this.venue = "Rohini"
+  
+}
+}
 
-console.log(user.adr.city)
+class Product extends Company{
+  constructor(){
+    super()
+    this.eda = "EDwinXP"
+    this.use = "PCB Designing tOOl"
+  }
+}
 
-console.log(sum)
+const product = new Product()
+console.log(product)

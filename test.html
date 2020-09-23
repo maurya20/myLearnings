@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body onload="myclock = setInterval(myFunction, 10)">
-<div style="width:97%">
-<div style="width:30%;float:left;">
-<input type="text" placeholder="Type radius of circle..." id="radius">
-<h3 id="demo">demo</h3>
-</div>
-<div style="width:68%; float:right;">
-<canvas id="myCanvas" width="450" height="450"style="background-color: gray;">
-Your browser does not support the HTML canvas tag.</canvas>
-</div>
-</div>
+<body>
+
+<p>Image to use:</p>
+
+
+<input id="myFileInput" type="file" accept="image/*;capture=camera">
 
 <script>
-      var myclock = setInterval(myFunction, 2000);
-      function myFunction() {
-        radius = document.getElementById("radius").value;
-        area = Math.PI*radius*radius;
-        document.getElementById("demo").innerHTML = "Area of your circle = "+area+"square unit.";
-        document.getElementById("p2").style.width = radius + "px";
-        document.getElementById("p2").style.height = radius + "px";
-      }
-      var myclock = setInterval(myCir, 2000);
-      function myCir() {
-          side = document.getElementById("radius").value;
-          var c = document.getElementById("myCanvas");
-          var ctx = c.getContext("2d");
-          ctx.clearRect(0, 0, 450, 450);
-          ctx.beginPath();
-          ctx.arc(225,225,radius,0,2*Math.PI);
-          ctx.stroke();
-      }
-</script> 
+var myInput = document.getElementById('myFileInput');
+
+function sendPic() {
+    var file = myInput.files[0];
+
+    // Send file here either by adding it to a `FormData` object 
+    // and sending that via XHR, or by simply passing the file into 
+    // the `send` method of an XHR instance.
+}
+
+myInput.addEventListener('change', sendPic, false);
+</script>
 
 </body>
 </html>
