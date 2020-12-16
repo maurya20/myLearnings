@@ -1,18 +1,11 @@
-class Company {
-  constructor(){
-  this.name = "Ambition"
-  this.venue = "Rohini"
-  
-}
+import React from 'react'
+
+function main() {
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
-class Product extends Company{
-  constructor(){
-    super()
-    this.eda = "EDwinXP"
-    this.use = "PCB Designing tOOl"
-  }
-}
-
-const product = new Product()
-console.log(product)
+export default main
