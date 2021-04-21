@@ -44,11 +44,10 @@ Dashboard.registerWidget(function (dashboardAPI, registerWidgetAPI) {
     // Set the widget title
     .then((user) => {
       dashboardAPI.setTitle(`GitHub User ${user.login}`);
-      dashboardApi
-        .fetchHub("api/rest/users/me?fields=name,login,profile(avatar(url))")
-        .then((response) => console.log(response));
+      dasboardApi
+        .loadServices("YouTrack")
+        .then((youtracks) => console.log(">>>>>", youtracks[0]));
     });
-
   // Add the refresh button.
   registerWidgetAPI({
     onRefresh: () => loadAndRenderUser(USER_NAME),
