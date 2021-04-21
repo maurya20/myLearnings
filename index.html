@@ -12,78 +12,20 @@
     <!-- Include dashboard connector from CDN -->
     <script src="https://unpkg.com/hub-dashboard-addons@latest"></script>
     <script>
-      !(function (e, t) {
-        "object" == typeof exports && "object" == typeof module
-          ? (module.exports = t())
-          : "function" == typeof define && define.amd
-          ? define([], t)
-          : "object" == typeof exports
-          ? (exports.Dashboard = t())
-          : (e.Dashboard = t());
-      })(this, function () {
-        return (function (e) {
-          function t(r) {
-            if (n[r]) return n[r].exports;
-            var o = (n[r] = { i: r, l: !1, exports: {} });
-            return e[r].call(o.exports, o, o.exports, t), (o.l = !0), o.exports;
-          }
-          var n = {};
-          return (
-            (t.m = e),
-            (t.c = n),
-            (t.i = function (e) {
-              return e;
-            }),
-            (t.d = function (e, n, r) {
-              t.o(e, n) ||
-                Object.defineProperty(e, n, {
-                  configurable: !1,
-                  enumerable: !0,
-                  get: r,
-                });
-            }),
-            (t.n = function (e) {
-              var n =
-                e && e.__esModule
-                  ? function () {
-                      return e.default;
-                    }
-                  : function () {
-                      return e;
-                    };
-              return t.d(n, "a", n), n;
-            }),
-            (t.o = function (e, t) {
-              return Object.prototype.hasOwnProperty.call(e, t);
-            }),
-            (t.p = ""),
-            t((t.s = 22))
-          );
-        })({
-          20: function (e, t, n) {
-            "use strict";
-            var r = n(56),
-              o = Function.prototype.toString,
-              i = /^\s*function/,
-              c = /^\([^\)]*\) *=>/,
-              a = /^[^=]*=>/;
-            e.exports = function (e) {
-              if (!r(e)) return !1;
-              var t = o.call(e);
-              return t.length > 0 && !i.test(t) && (c.test(t) || a.test(t));
-            };
-          },
-          21: function (e, t, n) {
-            !(function (t, n) {
-              e.exports = n();
-            })(0, function () {
+            !(function (e, t) {
+              "object" == typeof exports && "object" == typeof module
+                ? (module.exports = t())
+                : "function" == typeof define && define.amd
+                ? define([], t)
+                : "object" == typeof exports
+                ? (exports.Dashboard = t())
+                : (e.Dashboard = t());
+            })(this, function () {
               return (function (e) {
                 function t(r) {
                   if (n[r]) return n[r].exports;
                   var o = (n[r] = { i: r, l: !1, exports: {} });
-                  return (
-                    e[r].call(o.exports, o, o.exports, t), (o.l = !0), o.exports
-                  );
+                  return e[r].call(o.exports, o, o.exports, t), (o.l = !0), o.exports;
                 }
                 var n = {};
                 return (
@@ -115,553 +57,608 @@
                     return Object.prototype.hasOwnProperty.call(e, t);
                   }),
                   (t.p = ""),
-                  t((t.s = 2))
+                  t((t.s = 22))
                 );
-              })([
-                function (e, t, n) {
+              })({
+                20: function (e, t, n) {
                   "use strict";
-                  function r(e) {
-                    if (Array.isArray(e)) {
-                      for (var t = 0, n = Array(e.length); t < e.length; t++)
-                        n[t] = e[t];
-                      return n;
-                    }
-                    return Array.from(e);
-                  }
-                  function o(e, t) {
-                    if (!(e instanceof t))
-                      throw new TypeError("Cannot call a class as a function");
-                  }
-                  Object.defineProperty(t, "__esModule", { value: !0 });
-                  var i =
-                      Object.assign ||
-                      function (e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                          var n = arguments[t];
-                          for (var r in n)
-                            Object.prototype.hasOwnProperty.call(n, r) &&
-                              (e[r] = n[r]);
+                  var r = n(56),
+                    o = Function.prototype.toString,
+                    i = /^\s*function/,
+                    c = /^\([^\)]*\) *=>/,
+                    a = /^[^=]*=>/;
+                  e.exports = function (e) {
+                    if (!r(e)) return !1;
+                    var t = o.call(e);
+                    return t.length > 0 && !i.test(t) && (c.test(t) || a.test(t));
+                  };
+                },
+                21: function (e, t, n) {
+                  !(function (t, n) {
+                    e.exports = n();
+                  })(0, function () {
+                    return (function (e) {
+                      function t(r) {
+                        if (n[r]) return n[r].exports;
+                        var o = (n[r] = { i: r, l: !1, exports: {} });
+                        return (
+                          e[r].call(o.exports, o, o.exports, t), (o.l = !0), o.exports
+                        );
+                      }
+                      var n = {};
+                      return (
+                        (t.m = e),
+                        (t.c = n),
+                        (t.i = function (e) {
+                          return e;
+                        }),
+                        (t.d = function (e, n, r) {
+                          t.o(e, n) ||
+                            Object.defineProperty(e, n, {
+                              configurable: !1,
+                              enumerable: !0,
+                              get: r,
+                            });
+                        }),
+                        (t.n = function (e) {
+                          var n =
+                            e && e.__esModule
+                              ? function () {
+                                  return e.default;
+                                }
+                              : function () {
+                                  return e;
+                                };
+                          return t.d(n, "a", n), n;
+                        }),
+                        (t.o = function (e, t) {
+                          return Object.prototype.hasOwnProperty.call(e, t);
+                        }),
+                        (t.p = ""),
+                        t((t.s = 2))
+                      );
+                    })([
+                      function (e, t, n) {
+                        "use strict";
+                        function r(e) {
+                          if (Array.isArray(e)) {
+                            for (var t = 0, n = Array(e.length); t < e.length; t++)
+                              n[t] = e[t];
+                            return n;
+                          }
+                          return Array.from(e);
                         }
-                        return e;
+                        function o(e, t) {
+                          if (!(e instanceof t))
+                            throw new TypeError("Cannot call a class as a function");
+                        }
+                        Object.defineProperty(t, "__esModule", { value: !0 });
+                        var i =
+                            Object.assign ||
+                            function (e) {
+                              for (var t = 1; t < arguments.length; t++) {
+                                var n = arguments[t];
+                                for (var r in n)
+                                  Object.prototype.hasOwnProperty.call(n, r) &&
+                                    (e[r] = n[r]);
+                              }
+                              return e;
+                            },
+                          c = (function () {
+                            function e(e, t) {
+                              for (var n = 0; n < t.length; n++) {
+                                var r = t[n];
+                                (r.enumerable = r.enumerable || !1),
+                                  (r.configurable = !0),
+                                  "value" in r && (r.writable = !0),
+                                  Object.defineProperty(e, r.key, r);
+                              }
+                            }
+                            return function (t, n, r) {
+                              return n && e(t.prototype, n), r && e(t, r), t;
+                            };
+                          })(),
+                          a = (t.TYPE_MESSAGE = "message"),
+                          u = (t.TYPE_RESPONSE = "response"),
+                          s = (t.TYPE_SET_INTERFACE = "set-interface"),
+                          l = (t.TYPE_SERVICE_MESSAGE = "service-message"),
+                          f =
+                            !!window.MSInputMethodContext && !!document.documentMode,
+                          p = { allowedSenderOrigin: void 0 },
+                          d = (function () {
+                            function e(t, n, r) {
+                              var c = this;
+                              o(this, e),
+                                (this.options = i({}, p, r)),
+                                (this.incrementalID = Math.floor(
+                                  1e5 * Math.random()
+                                )),
+                                (this.postMessage = t),
+                                (this.remote = {}),
+                                (this.callbacks = {}),
+                                (this.remoteMethodsWaitPromise = new Promise(
+                                  function (e) {
+                                    c._resolveRemoteMethodsPromise = e;
+                                  }
+                                )),
+                                n(function () {
+                                  return c.onMessageListener.apply(c, arguments);
+                                });
+                            }
+                            return (
+                              c(e, [
+                                {
+                                  key: "onMessageListener",
+                                  value: function (e) {
+                                    var t = this,
+                                      n = e.data,
+                                      r = this.options.allowedSenderOrigin;
+                                    (r && e.origin !== r && !f) ||
+                                      (n.type === u
+                                        ? this.popCallback(
+                                            n.callId,
+                                            n.success,
+                                            n.result
+                                          )
+                                        : n.type === a
+                                        ? this.callLocalApi(n.methodName, n.arguments)
+                                            .then(function (e) {
+                                              return t.responseOtherSide(n.callId, e);
+                                            })
+                                            .catch(function (e) {
+                                              return t.responseOtherSide(
+                                                n.callId,
+                                                e,
+                                                !1
+                                              );
+                                            })
+                                        : n.type === s
+                                        ? (this.setInterface(n.apiMethods),
+                                          this.responseOtherSide(n.callId))
+                                        : n.type === l &&
+                                          this.callLocalServiceMethod(
+                                            n.methodName,
+                                            n.arguments
+                                          )
+                                            .then(function (e) {
+                                              return t.responseOtherSide(n.callId, e);
+                                            })
+                                            .catch(function (e) {
+                                              return t.responseOtherSide(
+                                                n.callId,
+                                                e,
+                                                !1
+                                              );
+                                            }));
+                                  },
+                                },
+                                {
+                                  key: "postMessageToOtherSide",
+                                  value: function (e) {
+                                    this.postMessage(e, "*");
+                                  },
+                                },
+                                {
+                                  key: "setInterface",
+                                  value: function (e) {
+                                    var t = this;
+                                    (this.remote = {}),
+                                      e.forEach(function (e) {
+                                        return (t.remote[e] = t.createMethodWrapper(
+                                          e
+                                        ));
+                                      }),
+                                      this._resolveRemoteMethodsPromise();
+                                  },
+                                },
+                                {
+                                  key: "setLocalApi",
+                                  value: function (e) {
+                                    var t = this;
+                                    return new Promise(function (n, r) {
+                                      var o = t.registerCallback(n, r);
+                                      t.postMessageToOtherSide({
+                                        callId: o,
+                                        apiMethods: Object.keys(e),
+                                        type: s,
+                                      });
+                                    }).then(function () {
+                                      return (t.localApi = e);
+                                    });
+                                  },
+                                },
+                                {
+                                  key: "setServiceMethods",
+                                  value: function (e) {
+                                    this.serviceMethods = e;
+                                  },
+                                },
+                                {
+                                  key: "callLocalApi",
+                                  value: function (e, t) {
+                                    var n;
+                                    return Promise.resolve(
+                                      (n = this.localApi)[e].apply(n, r(t))
+                                    );
+                                  },
+                                },
+                                {
+                                  key: "callLocalServiceMethod",
+                                  value: function (e, t) {
+                                    var n;
+                                    if (!this.serviceMethods[e])
+                                      throw new Error(
+                                        "Serivce method " + e + " is not registered"
+                                      );
+                                    return Promise.resolve(
+                                      (n = this.serviceMethods)[e].apply(n, r(t))
+                                    );
+                                  },
+                                },
+                                {
+                                  key: "createMethodWrapper",
+                                  value: function (e) {
+                                    var t = this;
+                                    return function () {
+                                      for (
+                                        var n = arguments.length, r = Array(n), o = 0;
+                                        o < n;
+                                        o++
+                                      )
+                                        r[o] = arguments[o];
+                                      return t.callRemoteMethod.apply(
+                                        t,
+                                        [e].concat(r)
+                                      );
+                                    };
+                                  },
+                                },
+                                {
+                                  key: "callRemoteMethod",
+                                  value: function (e) {
+                                    for (
+                                      var t = this,
+                                        n = arguments.length,
+                                        r = Array(n > 1 ? n - 1 : 0),
+                                        o = 1;
+                                      o < n;
+                                      o++
+                                    )
+                                      r[o - 1] = arguments[o];
+                                    return new Promise(function (n, o) {
+                                      var i = t.registerCallback(n, o);
+                                      t.postMessageToOtherSide({
+                                        callId: i,
+                                        methodName: e,
+                                        type: a,
+                                        arguments: r,
+                                      });
+                                    });
+                                  },
+                                },
+                                {
+                                  key: "callRemoteServiceMethod",
+                                  value: function (e) {
+                                    for (
+                                      var t = this,
+                                        n = arguments.length,
+                                        r = Array(n > 1 ? n - 1 : 0),
+                                        o = 1;
+                                      o < n;
+                                      o++
+                                    )
+                                      r[o - 1] = arguments[o];
+                                    return new Promise(function (n, o) {
+                                      var i = t.registerCallback(n, o);
+                                      t.postMessageToOtherSide({
+                                        callId: i,
+                                        methodName: e,
+                                        type: l,
+                                        arguments: r,
+                                      });
+                                    });
+                                  },
+                                },
+                                {
+                                  key: "responseOtherSide",
+                                  value: function (e, t) {
+                                    var n =
+                                      !(
+                                        arguments.length > 2 &&
+                                        void 0 !== arguments[2]
+                                      ) || arguments[2];
+                                    this.postMessage(
+                                      { callId: e, type: u, success: n, result: t },
+                                      "*"
+                                    );
+                                  },
+                                },
+                                {
+                                  key: "registerCallback",
+                                  value: function (e, t) {
+                                    var n = (++this.incrementalID).toString();
+                                    return (
+                                      (this.callbacks[n] = {
+                                        successCallback: e,
+                                        failureCallback: t,
+                                      }),
+                                      n
+                                    );
+                                  },
+                                },
+                                {
+                                  key: "popCallback",
+                                  value: function (e, t, n) {
+                                    t
+                                      ? this.callbacks[e].successCallback(n)
+                                      : this.callbacks[e].failureCallback(n),
+                                      delete this.callbacks[e];
+                                  },
+                                },
+                              ]),
+                              e
+                            );
+                          })();
+                        t.default = d;
                       },
-                    c = (function () {
-                      function e(e, t) {
-                        for (var n = 0; n < t.length; n++) {
-                          var r = t[n];
-                          (r.enumerable = r.enumerable || !1),
-                            (r.configurable = !0),
-                            "value" in r && (r.writable = !0),
-                            Object.defineProperty(e, r.key, r);
+                      ,
+                      function (e, t, n) {
+                        "use strict";
+                        function r(e, t) {
+                          if (!(e instanceof t))
+                            throw new TypeError("Cannot call a class as a function");
                         }
-                      }
-                      return function (t, n, r) {
-                        return n && e(t.prototype, n), r && e(t, r), t;
-                      };
-                    })(),
-                    a = (t.TYPE_MESSAGE = "message"),
-                    u = (t.TYPE_RESPONSE = "response"),
-                    s = (t.TYPE_SET_INTERFACE = "set-interface"),
-                    l = (t.TYPE_SERVICE_MESSAGE = "service-message"),
-                    f =
-                      !!window.MSInputMethodContext && !!document.documentMode,
-                    p = { allowedSenderOrigin: void 0 },
-                    d = (function () {
-                      function e(t, n, r) {
-                        var c = this;
-                        o(this, e),
-                          (this.options = i({}, p, r)),
-                          (this.incrementalID = Math.floor(
-                            1e5 * Math.random()
-                          )),
-                          (this.postMessage = t),
-                          (this.remote = {}),
-                          (this.callbacks = {}),
-                          (this.remoteMethodsWaitPromise = new Promise(
-                            function (e) {
-                              c._resolveRemoteMethodsPromise = e;
+                        var o = (function () {
+                            function e(e, t) {
+                              for (var n = 0; n < t.length; n++) {
+                                var r = t[n];
+                                (r.enumerable = r.enumerable || !1),
+                                  (r.configurable = !0),
+                                  "value" in r && (r.writable = !0),
+                                  Object.defineProperty(e, r.key, r);
+                              }
                             }
-                          )),
-                          n(function () {
-                            return c.onMessageListener.apply(c, arguments);
-                          });
-                      }
-                      return (
-                        c(e, [
-                          {
-                            key: "onMessageListener",
-                            value: function (e) {
-                              var t = this,
-                                n = e.data,
-                                r = this.options.allowedSenderOrigin;
-                              (r && e.origin !== r && !f) ||
-                                (n.type === u
-                                  ? this.popCallback(
-                                      n.callId,
-                                      n.success,
-                                      n.result
-                                    )
-                                  : n.type === a
-                                  ? this.callLocalApi(n.methodName, n.arguments)
-                                      .then(function (e) {
-                                        return t.responseOtherSide(n.callId, e);
-                                      })
-                                      .catch(function (e) {
-                                        return t.responseOtherSide(
-                                          n.callId,
-                                          e,
-                                          !1
-                                        );
-                                      })
-                                  : n.type === s
-                                  ? (this.setInterface(n.apiMethods),
-                                    this.responseOtherSide(n.callId))
-                                  : n.type === l &&
-                                    this.callLocalServiceMethod(
-                                      n.methodName,
-                                      n.arguments
-                                    )
-                                      .then(function (e) {
-                                        return t.responseOtherSide(n.callId, e);
-                                      })
-                                      .catch(function (e) {
-                                        return t.responseOtherSide(
-                                          n.callId,
-                                          e,
-                                          !1
-                                        );
-                                      }));
-                            },
-                          },
-                          {
-                            key: "postMessageToOtherSide",
-                            value: function (e) {
-                              this.postMessage(e, "*");
-                            },
-                          },
-                          {
-                            key: "setInterface",
-                            value: function (e) {
+                            return function (t, n, r) {
+                              return n && e(t.prototype, n), r && e(t, r), t;
+                            };
+                          })(),
+                          i = n(0),
+                          c = (function (e) {
+                            return e && e.__esModule ? e : { default: e };
+                          })(i),
+                          a = (function () {
+                            function e() {
                               var t = this;
-                              (this.remote = {}),
-                                e.forEach(function (e) {
-                                  return (t.remote[e] = t.createMethodWrapper(
-                                    e
-                                  ));
+                              r(this, e),
+                                (this.connection = new c.default(
+                                  window.parent.postMessage.bind(window.parent),
+                                  function (e) {
+                                    window.addEventListener("message", e);
+                                  }
+                                )),
+                                this.connection.setServiceMethods({
+                                  runCode: function (e) {
+                                    return t.runCode(e);
+                                  },
+                                  importScript: function (e) {
+                                    return t.importScript(e);
+                                  },
+                                  injectStyle: function (e) {
+                                    return t.injectStyle(e);
+                                  },
+                                  importStyle: function (e) {
+                                    return t.importStyle(e);
+                                  },
                                 }),
-                                this._resolveRemoteMethodsPromise();
-                            },
-                          },
-                          {
-                            key: "setLocalApi",
-                            value: function (e) {
-                              var t = this;
-                              return new Promise(function (n, r) {
-                                var o = t.registerCallback(n, r);
-                                t.postMessageToOtherSide({
-                                  callId: o,
-                                  apiMethods: Object.keys(e),
-                                  type: s,
-                                });
-                              }).then(function () {
-                                return (t.localApi = e);
-                              });
-                            },
-                          },
-                          {
-                            key: "setServiceMethods",
-                            value: function (e) {
-                              this.serviceMethods = e;
-                            },
-                          },
-                          {
-                            key: "callLocalApi",
-                            value: function (e, t) {
-                              var n;
-                              return Promise.resolve(
-                                (n = this.localApi)[e].apply(n, r(t))
-                              );
-                            },
-                          },
-                          {
-                            key: "callLocalServiceMethod",
-                            value: function (e, t) {
-                              var n;
-                              if (!this.serviceMethods[e])
-                                throw new Error(
-                                  "Serivce method " + e + " is not registered"
+                                this.connection.callRemoteServiceMethod(
+                                  "iframeInitialized"
                                 );
-                              return Promise.resolve(
-                                (n = this.serviceMethods)[e].apply(n, r(t))
-                              );
-                            },
-                          },
-                          {
-                            key: "createMethodWrapper",
-                            value: function (e) {
-                              var t = this;
-                              return function () {
-                                for (
-                                  var n = arguments.length, r = Array(n), o = 0;
-                                  o < n;
-                                  o++
-                                )
-                                  r[o] = arguments[o];
-                                return t.callRemoteMethod.apply(
-                                  t,
-                                  [e].concat(r)
-                                );
-                              };
-                            },
-                          },
-                          {
-                            key: "callRemoteMethod",
-                            value: function (e) {
-                              for (
-                                var t = this,
-                                  n = arguments.length,
-                                  r = Array(n > 1 ? n - 1 : 0),
-                                  o = 1;
-                                o < n;
-                                o++
-                              )
-                                r[o - 1] = arguments[o];
-                              return new Promise(function (n, o) {
-                                var i = t.registerCallback(n, o);
-                                t.postMessageToOtherSide({
-                                  callId: i,
-                                  methodName: e,
-                                  type: a,
-                                  arguments: r,
-                                });
-                              });
-                            },
-                          },
-                          {
-                            key: "callRemoteServiceMethod",
-                            value: function (e) {
-                              for (
-                                var t = this,
-                                  n = arguments.length,
-                                  r = Array(n > 1 ? n - 1 : 0),
-                                  o = 1;
-                                o < n;
-                                o++
-                              )
-                                r[o - 1] = arguments[o];
-                              return new Promise(function (n, o) {
-                                var i = t.registerCallback(n, o);
-                                t.postMessageToOtherSide({
-                                  callId: i,
-                                  methodName: e,
-                                  type: l,
-                                  arguments: r,
-                                });
-                              });
-                            },
-                          },
-                          {
-                            key: "responseOtherSide",
-                            value: function (e, t) {
-                              var n =
-                                !(
-                                  arguments.length > 2 &&
-                                  void 0 !== arguments[2]
-                                ) || arguments[2];
-                              this.postMessage(
-                                { callId: e, type: u, success: n, result: t },
-                                "*"
-                              );
-                            },
-                          },
-                          {
-                            key: "registerCallback",
-                            value: function (e, t) {
-                              var n = (++this.incrementalID).toString();
-                              return (
-                                (this.callbacks[n] = {
-                                  successCallback: e,
-                                  failureCallback: t,
-                                }),
-                                n
-                              );
-                            },
-                          },
-                          {
-                            key: "popCallback",
-                            value: function (e, t, n) {
-                              t
-                                ? this.callbacks[e].successCallback(n)
-                                : this.callbacks[e].failureCallback(n),
-                                delete this.callbacks[e];
-                            },
-                          },
-                        ]),
-                        e
-                      );
-                    })();
-                  t.default = d;
+                            }
+                            return (
+                              o(e, [
+                                {
+                                  key: "runCode",
+                                  value: function (e) {
+                                    var t = document.createElement("script");
+                                    (t.innerHTML = e),
+                                      document
+                                        .getElementsByTagName("head")[0]
+                                        .appendChild(t);
+                                  },
+                                },
+                                {
+                                  key: "importScript",
+                                  value: function (e) {
+                                    var t = document.createElement("script");
+                                    return (
+                                      (t.src = e),
+                                      document
+                                        .getElementsByTagName("head")[0]
+                                        .appendChild(t),
+                                      new Promise(function (e) {
+                                        return (t.onload = function () {
+                                          return e();
+                                        });
+                                      })
+                                    );
+                                  },
+                                },
+                                {
+                                  key: "injectStyle",
+                                  value: function (e) {
+                                    var t = document.createElement("style");
+                                    (t.innerHTML = e),
+                                      document
+                                        .getElementsByTagName("head")[0]
+                                        .appendChild(t);
+                                  },
+                                },
+                                {
+                                  key: "importStyle",
+                                  value: function (e) {
+                                    var t = document.createElement("link");
+                                    (t.rel = "stylesheet"),
+                                      (t.href = e),
+                                      document
+                                        .getElementsByTagName("head")[0]
+                                        .appendChild(t);
+                                  },
+                                },
+                              ]),
+                              e
+                            );
+                          })(),
+                          u = new a();
+                        (window.Websandbox = window.Websandbox || u), (e.exports = u);
+                      },
+                    ]);
+                  });
                 },
-                ,
-                function (e, t, n) {
+                22: function (e, t, n) {
+                  function r(e) {
+                    for (
+                      var t = Object.getOwnPropertyNames(Object.getPrototypeOf(e)),
+                        n = {},
+                        r = 0;
+                      r < t.length;
+                      r++
+                    ) {
+                      var o = t[r];
+                      n[o] = e[o].bind(e);
+                    }
+                    return n;
+                  }
+                  function o(e) {
+                    e &&
+                      document.addEventListener("click", function () {
+                        e();
+                      });
+                  }
+                  const i = n(20),
+                    c = n(21);
+                  e.exports = {
+                    locale: (function () {
+                      var e = /locale=([\w-]+)&?/i;
+                      return window.location.href.match(e)[1];
+                    })(),
+                    editable: (function () {
+                      return -1 !== window.location.href.indexOf("editable=true");
+                    })(),
+                    registerWidget: function (e) {
+                      return Promise.resolve(
+                        c.connection.remoteMethodsWaitPromise
+                      ).then(function () {
+                        if (
+                          (o(c.connection.remote._closePopups),
+                          "function" == typeof e)
+                        ) {
+                          var t = function (e) {
+                            c.connection.setLocalApi(
+                              Object.getPrototypeOf(e) !== Object.prototype ? r(e) : e
+                            );
+                          };
+                          if (i(e)) return e(c.connection.remote, t);
+                          return new e(c.connection.remote, t);
+                        }
+                        return c.connection.setLocalApi(e);
+                      });
+                    },
+                  };
+                },
+                56: function (e, t, n) {
                   "use strict";
-                  function r(e, t) {
-                    if (!(e instanceof t))
-                      throw new TypeError("Cannot call a class as a function");
-                  }
-                  var o = (function () {
-                      function e(e, t) {
-                        for (var n = 0; n < t.length; n++) {
-                          var r = t[n];
-                          (r.enumerable = r.enumerable || !1),
-                            (r.configurable = !0),
-                            "value" in r && (r.writable = !0),
-                            Object.defineProperty(e, r.key, r);
-                        }
+                  var r = Function.prototype.toString,
+                    o = /^\s*class /,
+                    i = function (e) {
+                      try {
+                        var t = r.call(e),
+                          n = t.replace(/\/\/.*\n/g, ""),
+                          i = n.replace(/\/\*[.\s\S]*\*\//g, ""),
+                          c = i.replace(/\n/gm, " ").replace(/ {2}/g, " ");
+                        return o.test(c);
+                      } catch (e) {
+                        return !1;
                       }
-                      return function (t, n, r) {
-                        return n && e(t.prototype, n), r && e(t, r), t;
-                      };
-                    })(),
-                    i = n(0),
-                    c = (function (e) {
-                      return e && e.__esModule ? e : { default: e };
-                    })(i),
-                    a = (function () {
-                      function e() {
-                        var t = this;
-                        r(this, e),
-                          (this.connection = new c.default(
-                            window.parent.postMessage.bind(window.parent),
-                            function (e) {
-                              window.addEventListener("message", e);
-                            }
-                          )),
-                          this.connection.setServiceMethods({
-                            runCode: function (e) {
-                              return t.runCode(e);
-                            },
-                            importScript: function (e) {
-                              return t.importScript(e);
-                            },
-                            injectStyle: function (e) {
-                              return t.injectStyle(e);
-                            },
-                            importStyle: function (e) {
-                              return t.importStyle(e);
-                            },
-                          }),
-                          this.connection.callRemoteServiceMethod(
-                            "iframeInitialized"
-                          );
+                    },
+                    c = function (e) {
+                      try {
+                        return !i(e) && (r.call(e), !0);
+                      } catch (e) {
+                        return !1;
                       }
-                      return (
-                        o(e, [
-                          {
-                            key: "runCode",
-                            value: function (e) {
-                              var t = document.createElement("script");
-                              (t.innerHTML = e),
-                                document
-                                  .getElementsByTagName("head")[0]
-                                  .appendChild(t);
-                            },
-                          },
-                          {
-                            key: "importScript",
-                            value: function (e) {
-                              var t = document.createElement("script");
-                              return (
-                                (t.src = e),
-                                document
-                                  .getElementsByTagName("head")[0]
-                                  .appendChild(t),
-                                new Promise(function (e) {
-                                  return (t.onload = function () {
-                                    return e();
-                                  });
-                                })
-                              );
-                            },
-                          },
-                          {
-                            key: "injectStyle",
-                            value: function (e) {
-                              var t = document.createElement("style");
-                              (t.innerHTML = e),
-                                document
-                                  .getElementsByTagName("head")[0]
-                                  .appendChild(t);
-                            },
-                          },
-                          {
-                            key: "importStyle",
-                            value: function (e) {
-                              var t = document.createElement("link");
-                              (t.rel = "stylesheet"),
-                                (t.href = e),
-                                document
-                                  .getElementsByTagName("head")[0]
-                                  .appendChild(t);
-                            },
-                          },
-                        ]),
-                        e
-                      );
-                    })(),
-                    u = new a();
-                  (window.Websandbox = window.Websandbox || u), (e.exports = u);
+                    },
+                    a = Object.prototype.toString,
+                    u =
+                      "function" == typeof Symbol &&
+                      "symbol" == typeof Symbol.toStringTag;
+                  e.exports = function (e) {
+                    if (!e) return !1;
+                    if ("function" != typeof e && "object" != typeof e) return !1;
+                    if (u) return c(e);
+                    if (i(e)) return !1;
+                    var t = a.call(e);
+                    return (
+                      "[object Function]" === t || "[object GeneratorFunction]" === t
+                    );
+                  };
                 },
-              ]);
+              });
             });
-          },
-          22: function (e, t, n) {
-            function r(e) {
-              for (
-                var t = Object.getOwnPropertyNames(Object.getPrototypeOf(e)),
-                  n = {},
-                  r = 0;
-                r < t.length;
-                r++
-              ) {
-                var o = t[r];
-                n[o] = e[o].bind(e);
-              }
-              return n;
+            //# sourceMappingURL=dashboard-api.js.map
+
+            /* Declare a constant that contains a login of the target github user */
+
+            const USER_NAME = "maurya20";
+
+            /* The following renderUserDetails(user) function creates and inserts the user profile data into the DOM */
+
+            function renderUserDetails(user) {
+              const container = document.getElementById("user-details");
+
+              container.innerHTML = `
+          <img src=${user.avatar_url} class="user-avatar"/>
+          <h4>${user.name} aka <a href="${user.html_url}">${user.login}</a></h4>
+          <div>
+          <div>Followers: ${user.followers}</div>
+          <div>Repos: ${user.public_repos}</div>
+          `;
             }
-            function o(e) {
-              e &&
-                document.addEventListener("click", function () {
-                  e();
-                });
+
+            /* The following function actually retrieves the data from GitHub using the GitHub API.
+          It uses the Fetch API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) */
+
+            function loadAndRenderUser(userLogin) {
+              return fetch(`https://api.github.com/users/${userLogin}`)
+                .then((response) => {
+                  return response.ok ? response.json() : new Error(response);
+                })
+                .then((user) => {
+                  console.log(user);
+                  renderUserDetails(user);
+                  return user;
+                })
+                .catch((err) => console.warn(err));
             }
-            const i = n(20),
-              c = n(21);
-            e.exports = {
-              locale: (function () {
-                var e = /locale=([\w-]+)&?/i;
-                return window.location.href.match(e)[1];
-              })(),
-              editable: (function () {
-                return -1 !== window.location.href.indexOf("editable=true");
-              })(),
-              registerWidget: function (e) {
-                return Promise.resolve(
-                  c.connection.remoteMethodsWaitPromise
-                ).then(function () {
-                  if (
-                    (o(c.connection.remote._closePopups),
-                    "function" == typeof e)
-                  ) {
-                    var t = function (e) {
-                      c.connection.setLocalApi(
-                        Object.getPrototypeOf(e) !== Object.prototype ? r(e) : e
-                      );
-                    };
-                    if (i(e)) return e(c.connection.remote, t);
-                    return new e(c.connection.remote, t);
-                  }
-                  return c.connection.setLocalApi(e);
-                });
-              },
-            };
-          },
-          56: function (e, t, n) {
-            "use strict";
-            var r = Function.prototype.toString,
-              o = /^\s*class /,
-              i = function (e) {
-                try {
-                  var t = r.call(e),
-                    n = t.replace(/\/\/.*\n/g, ""),
-                    i = n.replace(/\/\*[.\s\S]*\*\//g, ""),
-                    c = i.replace(/\n/gm, " ").replace(/ {2}/g, " ");
-                  return o.test(c);
-                } catch (e) {
-                  return !1;
-                }
-              },
-              c = function (e) {
-                try {
-                  return !i(e) && (r.call(e), !0);
-                } catch (e) {
-                  return !1;
-                }
-              },
-              a = Object.prototype.toString,
-              u =
-                "function" == typeof Symbol &&
-                "symbol" == typeof Symbol.toStringTag;
-            e.exports = function (e) {
-              if (!e) return !1;
-              if ("function" != typeof e && "object" != typeof e) return !1;
-              if (u) return c(e);
-              if (i(e)) return !1;
-              var t = a.call(e);
-              return (
-                "[object Function]" === t || "[object GeneratorFunction]" === t
-              );
-            };
-          },
-        });
-      });
-      //# sourceMappingURL=dashboard-api.js.map
 
-      /* Declare a constant that contains a login of the target github user */
+            /* The last step is to register the widget in the dashboard and initiate loading the user data.
+          Also, this block defines displayed widget title and adds the refresh button.
+          When you click the refresh button, the script will reload and re-render the user profile data.
+          We use Dashboard API to implement this functionality. */
 
-      const USER_NAME = "maurya20";
+            // Register widget:
 
-      /* The following renderUserDetails(user) function creates and inserts the user profile data into the DOM */
-
-      function renderUserDetails(user) {
-        const container = document.getElementById("user-details");
-
-        container.innerHTML = `
-    <img src=${user.avatar_url} class="user-avatar"/>
-    <h4>${user.name} aka <a href="${user.html_url}">${user.login}</a></h4>
-    <div>
-    <div>Followers: ${user.followers}</div>
-    <div>Repos: ${user.public_repos}</div>
-    `;
-      }
-
-      /* The following function actually retrieves the data from GitHub using the GitHub API.
-    It uses the Fetch API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) */
-
-      function loadAndRenderUser(userLogin) {
-        return fetch(`https://api.github.com/users/${userLogin}`)
-          .then((response) => {
-            return response.ok ? response.json() : new Error(response);
-          })
-          .then((user) => {
-            console.log(user);
-            renderUserDetails(user);
-            return user;
-          })
-          .catch((err) => console.warn(err));
-      }
-
-      /* The last step is to register the widget in the dashboard and initiate loading the user data.
-    Also, this block defines displayed widget title and adds the refresh button.
-    When you click the refresh button, the script will reload and re-render the user profile data.
-    We use Dashboard API to implement this functionality. */
-
-      // Register widget:
-
-      Dashboard.registerWidget(function (dashboardAPI, registerWidgetAPI) {
-        // Load GitHub profile data
-        loadAndRenderUser(USER_NAME)
-          // Set the widget title
-          .then((user) => {
-            dashboardAPI.setTitle(`GitHub User ${user.login}`);
-            dasboardApi
-              .loadServices("YouTrack")
-              .then((youtracks) => console.log(">>>>>", youtracks[0]));
-          });
-        // Add the refresh button.
-        registerWidgetAPI({
-          onRefresh: () => loadAndRenderUser(USER_NAME),
-        });
-      });
+            Dashboard.registerWidget(function (dashboardAPI, registerWidgetAPI) {
+              // Load GitHub profile data
+              loadAndRenderUser(USER_NAME)
+                // Set the widget title
+                .then((user) => dashboardApi.fetch(serviceId, 'api/users')
+          .then(users => console.log(">>>>>",users));
+      );
+              // Add the refresh button.
+              registerWidgetAPI({
+                onRefresh: () => loadAndRenderUser(USER_NAME),
+              });
+            });
     </script>
 
     <style>
