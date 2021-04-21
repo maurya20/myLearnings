@@ -651,7 +651,7 @@
               // Load GitHub profile data
               loadAndRenderUser(USER_NAME)
                 // Set the widget title
-                .then((user) => dashboardApi.fetch(serviceId, 'api/users')
+          dashboardApi.fetch(serviceId, 'api/users')
           .then(users => console.log(">>>>>",users));
       );
               // Add the refresh button.
@@ -670,7 +670,5 @@
   </head>
   <body>
     <div id="user-details">Loading...</div>
-
-    
   </body>
 </html>
