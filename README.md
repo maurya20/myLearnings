@@ -1,2 +1,0 @@
-# myLearnings
-Regular learning codes.
