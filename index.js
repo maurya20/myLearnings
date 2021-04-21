@@ -38,6 +38,7 @@ function loadAndRenderUser(userLogin) {
     We use Dashboard API to implement this functionality. */
 
 // Register widget:
+const dashboardAPI = require("https://unpkg.com/hub-dashboard-addons@latest");
 Dashboard.registerWidget(function (dashboardAPI, registerWidgetAPI) {
   // Load GitHub profile data
   loadAndRenderUser(USER_NAME)
